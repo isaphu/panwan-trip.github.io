@@ -55,3 +55,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+h2,h3 {
+  text-align: center;
+}
+
