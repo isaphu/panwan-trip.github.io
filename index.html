@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css" />
     <title>Panwan-Trip</title>
+    <script async
+        src="https://api.countapi.xyz/hit/isaphu.github.io/7c82a9c8-07fe-405b-b75a-c31a4a68e5c5?callback=websiteVisits"></script>
     <script>
+        function websiteVisits(response) {
+            document.querySelector("#visits").textContent = response.value;
+        }
         function showNorth() {
             var privateNorthSrc = "media/private-zone-north.png";
             var privateNorth = document.getElementById("pw-private-north")
@@ -118,7 +123,7 @@
                 <li>สัญญาณโทรศัพท์ใช้ได้ทุกเครือข่าย</li>
                 <li>มีอาหารบริการ</li>
                 <li>น้องหมา น้องแมว น้องนก ควรมีสายลากจูงเพื่อความปลอดภัย</li>
-              </ul> 
+            </ul>
         </div>
         <br>
         <h2>การจัดเต็นท์ (คร่าว ๆ)</h2>
@@ -130,48 +135,48 @@
         <div>
             <table>
                 <tr>
-                  <th>วันที่</th>
-                  <th>โปรแกรม</th>
-                  <th>อาหาร</th>
+                    <th>วันที่</th>
+                    <th>โปรแกรม</th>
+                    <th>อาหาร</th>
                 </tr>
                 <tr>
-                  <td>18/02/2022</td>
-                  <td>ถึงที่หมาย</td>
-                  <td>-</td>
+                    <td>18/02/2022</td>
+                    <td>ถึงที่หมาย</td>
+                    <td>-</td>
                 </tr>
                 <tr>
-                  <td>19/02/2022</td>
-                  <td>กิจกรรมคลายเครียด
-                      <ul>
-                          <li>อ่านหนังสือ</li>
-                          <li>เล่นเกมส์ </li>
-                          <li>ฟังเพลง </li>
-                          <li>นอน</li>
-                          <li>ดื่มด่ำบรรยากาศ</li>
-                          <li>ทำความรู้จักเพื่อน ๆ ใหม่</li>
+                    <td>19/02/2022</td>
+                    <td>กิจกรรมคลายเครียด
+                        <ul>
+                            <li>อ่านหนังสือ</li>
+                            <li>เล่นเกมส์ </li>
+                            <li>ฟังเพลง </li>
+                            <li>นอน</li>
+                            <li>ดื่มด่ำบรรยากาศ</li>
+                            <li>ทำความรู้จักเพื่อน ๆ ใหม่</li>
                         </ul>
-                  </td>
-                  <td>อาหารเช้า 
-                      <ul>
-                          <li>ไข่ดาว</li>
-                          <li>ไข่คน</li>
-                          <li>ไข่ต้ม</li>
-                          <li>ขนมปังปิ้ง</li>
-                          <li>ใส้กรอก</li>
-                          <li>ชา</li>
-                          <li>กาแฟ</li>
-                      </ul>
-                      อาหารเที่ยง 
-                      <ul>
-                          <li>สเต็ก</li>
-                          <li>บร๊อคโคลี่นึง</li>
-                          <li>mashed potato</li>
-                      </ul>
-                      อาหารเย็น
-                      <ul>
-                          <li>ชาบู</li>
-                      </ul>
-                  </td>
+                    </td>
+                    <td>อาหารเช้า
+                        <ul>
+                            <li>ไข่ดาว</li>
+                            <li>ไข่คน</li>
+                            <li>ไข่ต้ม</li>
+                            <li>ขนมปังปิ้ง</li>
+                            <li>ใส้กรอก</li>
+                            <li>ชา</li>
+                            <li>กาแฟ</li>
+                        </ul>
+                        อาหารเที่ยง
+                        <ul>
+                            <li>สเต็ก</li>
+                            <li>บร๊อคโคลี่นึง</li>
+                            <li>mashed potato</li>
+                        </ul>
+                        อาหารเย็น
+                        <ul>
+                            <li>ชาบู</li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>20/02/2022</td>
@@ -191,8 +196,8 @@
                             <li>แวะกลางทาง</li>
                         </ul>
                     </td>
-                  </tr>
-              </table> 
+                </tr>
+            </table>
         </div>
         <br>
         <h2>อุปกรณ์/อาหาร ที่ต้องเตรียมนอกเหนืออุปกรณ์แคมปปิ้งของตัวเอง</h2>
@@ -255,7 +260,7 @@
                         <li>อูมาม่า*</li>
                         <li>อาซีฟ*</li>
                     </ul>
-                </td> 
+                </td>
             </tr>
             <tr>
                 <div class="total-people">
@@ -265,11 +270,11 @@
                     <td>
                         9 คน
                     </td>
-                </tr>
-                </div>
-        </table>
-        <br>
-        <!-- <table>
+            </tr>
+    </div>
+    </table>
+    <br>
+    <!-- <table>
             <tr>
                 <th colspan="2">พาหนะ</th>
                 <th>สัญลักษณ์</th>
@@ -285,27 +290,27 @@
                 <td>รถยนต์อาซีฟ</td>
             </tr>
         </table> -->
-        <table>
-            <tr>
-                <th colspan="2">พาหนะ</th>
-            </tr>
-            <tr>
-                <td>สัญลักษณ์</td>
-                <td>ยี่ห้อ/ป้ายทะเบียน</td>
-            </tr>
-            <tr>
-                <td>†</td>
-                <td>Hyundai / ฮธ 3234</td>
-            </tr>
-            <tr>
-                <td>*</td>
-                <td>รถยนต์อาซีฟ</td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <h2>Made with love by ISA ❤️</h2>
+    <table>
+        <tr>
+            <th colspan="2">พาหนะ</th>
+        </tr>
+        <tr>
+            <td>สัญลักษณ์</td>
+            <td>ยี่ห้อ/ป้ายทะเบียน</td>
+        </tr>
+        <tr>
+            <td>†</td>
+            <td>Hyundai / ฮธ 3234</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>รถยนต์อาซีฟ</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Made with love by ISA ❤️</h2>
+    <h3>This site has been visited <span id="visits"></span> times.</h3>
 </body>
 
 </html>
-
